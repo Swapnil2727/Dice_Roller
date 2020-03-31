@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
             diceRoll()
         })
+        dice_image = findViewById(R.id.dice_image)
     }
 
     private fun diceRoll() {
