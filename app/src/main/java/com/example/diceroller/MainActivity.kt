@@ -11,8 +11,11 @@ import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
+
+    lateinit var dice_image:ImageView //in simple words we are promising compilier we'll not leave this null.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main)
 
         val roll_button: Button = findViewById(R.id.roll_button) // Binding view using traditional style
@@ -37,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             6->R.drawable.dice_6
             else -> R.drawable.empty_dice
         }
-        val dice_image: ImageView = findViewById(R.id.dice_image)
+
         dice_image.setImageResource(drawableResource)
 
     }
