@@ -14,8 +14,16 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/dice_1"
+        app:srcCompat ="@drawable/empty_dice"
+        tools:src="@drawable/dice_1"
+
         />
+<!--
+       app: srcCompact is for vector support so it won't load png in lower version, uses vector
+       it is from vectorDrawables.useSupportLibrary = true
+
+-->
+
 
     <Button
         android:id="@+id/roll_button"
